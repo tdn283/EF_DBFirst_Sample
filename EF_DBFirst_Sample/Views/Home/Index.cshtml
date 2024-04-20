@@ -1,0 +1,11 @@
+﻿@model IEnumerable<EF_DBFirst_Sample.Models.SinhVien>
+
+<h1>Sinh viên có tuổi từ 18 đến 20 và thuộc khoa CNTT:</h1>
+<ul>
+    @foreach (var sinhvien in Model)
+    {
+        <li>
+            @sinhvien.HoTen
+        </li>
+    }
+</ul>
